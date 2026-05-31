@@ -75,16 +75,16 @@ HTML pages are minified at build time via `astro-compress` (Logger level 2). Run
 
 | Page | Before | After | Saving |
 |---|---|---|---|
-| `/` | 9 191 B | 8 848 B | -4% |
-| `/about` | 3 530 B | 3 383 B | -4% |
-| `/experiences` | 6 821 B | 6 574 B | -4% |
-| `/projects` | 7 031 B | 6 760 B | -4% |
-| `/watch` | 24 635 B | 23 729 B | -4% |
-| `/watch/2` | 5 165 B | 4 937 B | -4% |
-| `/legal` | 3 442 B | 3 286 B | -5% |
-| `/now` | 3 819 B | 3 661 B | -4% |
-| CSS bundle | 96 125 B | 95 916 B | -0% |
-| `favicon.svg` | 749 B | 644 B | -14% |
+| `/` | 10 267 B | 9 850 B | -4% |
+| `/about` | 4 624 B | 4 403 B | -5% |
+| `/experiences` | 7 907 B | 7 586 B | -4% |
+| `/legal` | 4 536 B | 4 306 B | -5% |
+| `/now` | 4 913 B | 4 681 B | -5% |
+| `/projects` | 8 121 B | 7 776 B | -4% |
+| `/watch` | 25 725 B | 24 745 B | -4% |
+| `/watch/2` | 6 255 B | 5 953 B | -5% |
+| `CSS bundle` | 75 067 B | 74 974 B | -0% |
+| `favicon.svg` | 1 404 B | 835 B | -41% |
 
 </details>
 
