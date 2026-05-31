@@ -118,11 +118,30 @@ This test runs in CI against the production build via `astro preview`.
 
 ---
 
-## 7. Extending the test suite
+## 7. Test: navigation (desktop / mobile)
+
+**File:** `tests/nav.spec.ts`
+
+**Goal:** assert that both nav variants render and behave correctly at their respective breakpoints.
+
+**Strategy:**
+
+1. At a mobile viewport (375 × 812): assert the hamburger `<summary>` is visible and the desktop `<nav>` is hidden
+2. At a desktop viewport (1280 × 900): assert the desktop `<nav>` is visible and the hamburger `<details>` is hidden
+3. At mobile, click the hamburger: assert the dropdown `<ul>` becomes visible and contains all five nav links with the correct labels and hrefs
+4. Navigate to `/about` at mobile viewport, open the hamburger: assert the About link has `aria-current="page"` and no other link does
+
+Visibility checks use `toBeVisible()` / `not.toBeVisible()` — not count-based assertions — because both nav variants are always present in the DOM (Tailwind hides them via `display: none`, not by removing them).
+
+**Failure condition:** any broken breakpoint behaviour, missing link, or incorrect `aria-current` fails the test.
+
+---
+
+## 8. Extending the test suite
 
 New tests may be added only if they meet both conditions:
 
 - They validate a behaviour that cannot be caught at build time
 - They validate a behaviour that cannot be verified by visual inspection in under a minute
 
-If a new user interaction is introduced that requires JS (e.g. theme toggle), a targeted Playwright test for that interaction is acceptable.
+If a new user interaction is introduced — whether JS-driven (e.g. theme toggle) or CSS-only (e.g. `<details>` dropdown) — a targeted Playwright test for that interaction is acceptable.
