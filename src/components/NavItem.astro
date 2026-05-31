@@ -11,7 +11,7 @@ const { href, label } = Astro.props;
   <a
     href={href}
     class="text-sm hover:text-base-content/70 transition-colors"
-    aria-current={Astro.url.pathname === href ? 'page' : undefined}
+    aria-current={Astro.url.pathname.replace(/\/$/, '') === href ? 'page' : undefined}
   >
     {label}
   </a>
