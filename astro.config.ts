@@ -3,10 +3,16 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 import compress from 'astro-compress';
+import rehypeExternalLinks from 'rehype-external-links';
 import site from './src/data/site.json';
 
 export default defineConfig({
   site: site.siteUrl,
+  markdown: {
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+    ],
+  },
   integrations: [
     sitemap({
       filter: (page) => !/\/(watch|projects)\/\d+\/?$/.test(page),
