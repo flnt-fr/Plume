@@ -2,6 +2,22 @@
   "name": "plume",
   "type": "module",
   "version": "0.0.1",
+  "description": "A minimal personal portfolio and watch feed theme built with Astro, DaisyUI, and Tailwind CSS.",
+  "author": "Florent A.",
+  "license": "MIT",
+  "homepage": "https://plume.hex46.fr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flnt-fr/plume"
+  },
+  "keywords": [
+    "astro",
+    "astro-theme",
+    "astro-component",
+    "portfolio",
+    "tailwindcss",
+    "daisyui"
+  ],
   "engines": {
     "node": ">=22.12.0"
   },

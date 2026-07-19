@@ -8,17 +8,17 @@ layout: "../layouts/MarkdownLayout.astro"
 
 ## Site publisher
 
-This site is published by Your Name, freelance developer.
+This site is published personally by Florent A., who also serves as publication director.
 
-**Email:** [hello@example.com](mailto:hello@example.com)
+**Email:** [plume@hex46.fr](mailto:plume@hex46.fr)
 
 ## Hosting
 
-This site is a static site hosted via [Coolify](https://coolify.io).
+This site is a static site deployed via [Coolify](https://coolify.io) on a virtual private server operated by OVH SAS — €50,000,000 capital, located at 2 rue Kellermann, 59100 Roubaix, France, RCS Lille Métropole 424 761 419 00045.
 
 ## Intellectual property
 
-The content of this site — texts, structure, source code — is the property of the publisher unless otherwise stated. Any reproduction, even partial, is subject to prior authorisation.
+The content of this site — texts, structure, source code — is the property of the publisher unless otherwise stated. The source code is distributed under the MIT license; see the [GitHub repository](https://github.com/flnt-fr/plume) for full terms. Any other reproduction, even partial, is subject to prior authorisation.
 
 ## Personal data
 
