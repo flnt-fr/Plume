@@ -2,6 +2,15 @@
 
 A minimal personal portfolio and watch feed theme built with Astro, DaisyUI, and Tailwind CSS.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Astro](https://img.shields.io/badge/Astro-v6-orange)](https://astro.build)
+
+**[Live demo](https://plume.hex46.fr)** · [Use this template](https://github.com/flnt-fr/plume/generate)
+
+```sh
+npm create astro@latest -- --template flnt-fr/plume
+```
+
 ![Home page](docs/home-light.png)
 
 ---
