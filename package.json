@@ -43,7 +43,7 @@
     "astro-compress": "^2.4.1",
     "daisyui": "^5.5.23",
     "rehype-external-links": "^3.0.0",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
